@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">St Columbas College</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">Introduction</string>
+    <string name="title_activity_student_db">Student_db</string>
+    <string name="about_app">This is an Android Application of St. Columbas College Hazaribagh \n
+        This App is developed under the guidence of BCA Department by BALESHWAR SIR , VIKRAM SIR , SUDHIR SIR and trained by ABHISHEK SIR through BCA Degree-III Shubham Raja Shrivastava with the help of college, teachers and classmates.</string>
+    <string name="title_activity_as_view">AsView</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-3293121401536725/1402588891</string>
+    <string name="banner_ad_unit_id_test">ca-app-pub-3293121401536725/1595890893</string>
+
+    <string-array name="departArr">
+
+        <item>BCA</item>
+        <item>BIO_TECH</item>
+        <item>HISTORY</item>
+        <item>PHYSICS</item>
+        <item>MATHS</item>
+
+    </string-array>
+    <string-array name="yearArr">
+
+        <item>First Semester</item>
+        <item>Second Semester</item>
+        <item>Third Semester</item>
+        <item>Fourth Semester</item>
+        <item>Fifth Semester</item>
+        <item>Sixth Semester</item>
+
+    </string-array>
+
+    <string-array name="admArr">
+
+        <item>I.A.</item>
+        <item>I.Sc.</item>
+        <item>B.Sc.</item>
+        <item>B.A.</item>
+        <item>BCA</item>
+
+    </string-array>
+
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_activity_broad_serv">BroadServ</string>
+    <string name="title_activity_notice">Notice</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sr7d.shubhamraja.StColumbasCollege.Me">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created By: "
+        android:textSize="25dp"
+        android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_pressed"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/callus"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
+        android:id="@+id/imageView3" />
+
+    <ImageView
+        app:srcCompat="@drawable/mee"
+        android:layout_marginTop="17dp"
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Shubham Raja Shrivastava"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView19"
+        android:background="@drawable/style"
+        android:gravity="center"
+        android:textColor="#98ee11" />
+
+    <ImageView
+        android:layout_width="50dp"
+        app:srcCompat="@drawable/facebook"
+        android:id="@+id/imageView"
+        android:layout_marginTop="16dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView19"
+        android:layout_toLeftOf="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4" />
+
+</RelativeLayout>

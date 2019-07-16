@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#8E7636">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="User"
+        android:layout_below="@+id/toolbar"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textViewUserEmail"
+        android:textColor="?android:attr/colorMultiSelectHighlight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/linearLayoutButton"
+        android:layout_below="@+id/textViewUserEmail">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Communicate"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/buttonCommunicate"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Details"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/buttonsave"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/buttonView"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutButton">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            ads:srcCompat="@drawable/ic_account"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imagePic" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/linearLayoutEdit"
+            android:layout_below="@+id/imagePic"
+            android:scrollbars="vertical"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Current Address"
+                android:id="@+id/editTextCurrAddress"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Occupation"
+                android:id="@+id/editTextOccupation"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Company's Name"
+                android:id="@+id/editTextCompany"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Your Designation"
+                android:id="@+id/editTextDesg"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Work Exprience"
+                android:id="@+id/editTextWrkExp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonSaveInformation"
+                android:text="Save"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutShow"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/imagePic"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Your Name"
+                android:id="@+id/textViewName2"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Current Address"
+                android:id="@+id/textViewCurrAddress"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:textSize="24dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Occupation"
+                android:id="@+id/textViewOccupation"/>
+            <TextView
+                android:textSize="24dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Company's Name"
+                android:id="@+id/textViewCompany"
+                android:textColor="@color/colorPrimaryDark" />
+            <TextView
+                android:textSize="24dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Your Designation"
+                android:id="@+id/textviewDesg"/>
+            <TextView
+                android:textSize="24dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:hint="Work Exprience"
+                android:id="@+id/textViewWrkExp"/>
+
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id_test"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayoutShow"
+            android:layout_alignParentStart="true">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

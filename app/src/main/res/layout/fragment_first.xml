@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen1"
+    tools:context="com.sr7d.shubhamraja.StColumbasCollege.FirstFragment">
+
+    <ImageView
+        android:src="@drawable/homescreen1"
+        android:id="@+id/imgWal"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/relativeLayout3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="Shubham Raja Shrivastava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMe"
+        android:textSize="24sp"
+        android:textColor="#4455ee"
+        android:layout_alignBottom="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="BCA D-III"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDeg"
+        android:textSize="24sp"
+        android:textColor="#067511"
+        android:layout_below="@+id/txtMe"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Created by : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+
+        android:textSize="24sp"
+        android:textColor="#ee00e3"
+        android:layout_above="@+id/txtMe"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="ST. COLUMBA'S COLLEGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView3"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>

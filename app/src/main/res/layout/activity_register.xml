@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.sr7d.shubhamraja.StColumbasCollege.Register"
+    android:background="#f09b06">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Yourself"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your Email here..."
+            android:id="@+id/editTextEmail"/>
+
+        <EditText
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Password here..."
+            android:id="@+id/editTextPassword"/>
+        <EditText
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password..."
+            android:id="@+id/editTextPassword1"/>
+        <Button
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register yourself"
+            android:id="@+id/buttonRegister"
+            android:background="#121211"
+            android:textColor="#e94313" />
+        <TextView
+            android:textAlignment="center"
+            android:text="Already a user? Sign in here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/textViewSignin"
+            android:textColor="#48a10e" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

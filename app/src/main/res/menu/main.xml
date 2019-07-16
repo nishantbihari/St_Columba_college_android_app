@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:title="login"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_persn"/>
+    <item
+        android:title="About App"
+        android:id="@+id/item1"
+        android:orderInCategory="300"
+        android:visible="true"
+        android:enabled="true" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="200"
+        android:visible="true"
+        android:enabled="true"
+        android:title="@string/action_settings"
+        />
+    <item
+        android:title="Contact Developer"
+        android:id="@+id/item2"
+        android:orderInCategory="400"
+        android:visible="true"
+        android:enabled="true" />
+    <item
+        android:title="Exit"
+        android:id="@+id/item3"
+        android:orderInCategory="500"
+        android:visible="true"
+        android:enabled="true" />
+
+</menu>

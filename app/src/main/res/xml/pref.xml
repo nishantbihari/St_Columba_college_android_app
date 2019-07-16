@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enabled="true"
+    android:selectable="true">
+
+    <PreferenceCategory android:enabled="true"
+        android:summary="Enter your Personal Details"
+        android:title="Personal Information">
+
+        <EditTextPreference
+            android:defaultValue="Student"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Student Name"
+            android:key="name1"
+            android:summary="enter your full name here"
+            android:enabled="true"
+            android:selectable="true"
+            android:id="@+id/name1" />
+        <EditTextPreference
+            android:defaultValue="Home"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Address"
+            android:key="addr1"
+            android:enabled="true"
+            android:selectable="true"
+            android:summary="Enter your Correct Address here" />
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Phone Number"
+            android:key="phone1"
+            android:id="@+id/phone1"
+            android:enabled="true"
+            android:selectable="true"
+            android:summary="Enter your working Phone Number" />
+        <EditTextPreference
+            android:defaultValue="Parent"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Parent's Name"
+            android:key="par1"
+            android:summary="Enterthe name of your Guardian here"
+            android:selectable="true"
+            android:enabled="true" />
+    </PreferenceCategory>
+        <PreferenceCategory android:title=" College Information"
+            android:enabled="true">
+
+
+        <EditTextPreference
+            android:defaultValue="Null"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Roll Number"
+            android:key="roll1"
+            android:id="@+id/roll1"
+            android:enabled="true"
+            android:selectable="true"
+            android:summary="Enter your Class Roll number here" />
+        <EditTextPreference
+            android:defaultValue="Null"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="University Roll Number"
+            android:key="roll2"
+            android:summary="enter your Roll number given by the University"
+            android:selectable="true"
+            android:enabled="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title=" Notification Tone"
+        android:enabled="true">
+
+
+        <RingtonePreference
+            android:defaultValue=""
+            android:title="Notification Tone"
+            android:key="ring1"
+            android:enabled="true"
+            android:selectable="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

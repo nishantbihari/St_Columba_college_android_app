@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+
+    android:gravity="bottom"
+    android:orientation="vertical"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/coleg"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgLog" />
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/colorPrimary"
+
+        android:textSize="25dp"
+        android:text="St. Columba's College"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff3300"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="Hazaribagh , 825301" />
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.sr7d.shubhamraja.StColumbasCollege.Status">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="10"
+        android:layout_marginTop="104dp"
+        android:id="@+id/editTextDate"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignLeft="@+id/editTextDate"
+        android:layout_alignStart="@+id/editTextDate">
+        <TextView
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:id="@+id/textView"
+            android:textSize="36sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/style"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerYear2"
+        android:entryValues="@array/yearArr"
+        android:entries="@array/yearArr"
+        android:layout_alignBaseline="@+id/spinnerDepartment2"
+        android:layout_alignBottom="@+id/spinnerDepartment2"
+        android:layout_toRightOf="@+id/spinnerDepartment2"
+        android:layout_toEndOf="@+id/spinnerDepartment2" />
+
+    <Spinner
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerDepartment2"
+        android:entryValues="@array/departArr"
+        android:entries="@array/departArr"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextRoll"
+        android:hint="Roll no."
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/editTextDate"
+        android:layout_alignStart="@+id/editTextDate"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:text="Check Attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:layout_below="@+id/editTextRoll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
